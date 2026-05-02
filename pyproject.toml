@@ -1,0 +1,17 @@
+[project]
+name = "tlck"
+version = "0.1.0"
+description = "Secrets Manager"
+readme = "README.md"
+authors = [
+    { name = "jtawari095", email = "jtawari095@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+tlck = "tlck:main"
+
+[build-system]
+requires = ["uv_build>=0.11.4,<0.12.0"]
+build-backend = "uv_build"
