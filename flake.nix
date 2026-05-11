@@ -27,6 +27,7 @@
 				cairo
 				pkg-config
 				libadwaita
+				adwaita-icon-theme
 			];
 		};
 	});

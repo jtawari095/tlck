@@ -8,7 +8,7 @@ import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Adw, Gio, GLib  # noqa: E402
+from gi.repository import Adw, Gio, GLib, Gtk  # noqa: E402
 
 from .vault import Vault
 from .window import TlckWindow
@@ -18,6 +18,9 @@ logger = logging.getLogger(__name__)
 _APP_ID = "io.github.tlck"
 _DATA_DIR = Path(GLib.get_user_data_dir()) / "tlck"
 _DB_PATH = _DATA_DIR / "vault.db"
+
+settings = Gtk.Settings.get_default()
+settings.set_property("gtk-icon-theme-name", "Adwaita")
 
 
 # Tlck app

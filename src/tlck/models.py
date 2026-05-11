@@ -24,7 +24,7 @@ CATEGORY_LABELS: dict[Category, str] = {
 
 CATEGORY_ICONS: dict[Category, str] = {
     Category.LOGINS: "dialog-password-symbolic",
-    Category.CREDIT_CARDS: "credit-card-symbolic",
+    Category.CREDIT_CARDS: "dialog-password-symbolic",
     Category.ADDRESSES: "user-home-symbolic",
     Category.SSH_KEYS: "utilities-terminal-symbolic",
     Category.SECURE_NOTES: "document-edit-symbolic",
@@ -117,7 +117,6 @@ class SecureNote(BaseItem):
     def subtitle(self) -> str:
         first_line = self.content.strip().split("\n")[0] if self.content.strip() else ""
         return first_line[:60]
-
 
 
 ITEM_CLASS_MAP: dict[Category, type[BaseItem]] = {

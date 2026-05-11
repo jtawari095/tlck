@@ -6,6 +6,7 @@ It emits:
   - 'item-saved'   with the (possibly new) BaseItem instance
   - 'item-deleted' with the item id string (only when editing)
 """
+
 from __future__ import annotations
 
 import logging
@@ -231,7 +232,7 @@ class _BaseItemDialog(Adw.Dialog):
     @staticmethod
     def _notes_group(notes: str) -> tuple[Adw.PreferencesGroup, Gtk.TextView]:
         group = Adw.PreferencesGroup(title="Notes")
-        row, tv = _make_text_row("", notes)
+        row, tv = _make_text_row("Notes", notes)
         group.add(row)
         return group, tv
 
@@ -279,9 +280,7 @@ class LoginDialog(_BaseItemDialog):
         # ── TOTP ───────────────────────────────────────────────────────────
         totp_group = Adw.PreferencesGroup(title="Two-Factor Authentication (TOTP)")
 
-        self._totp_secret_row = _entry_row(
-            "Secret Key", i.totp_secret if i else ""
-        )
+        self._totp_secret_row = _entry_row("Secret Key", i.totp_secret if i else "")
         totp_group.add(self._totp_secret_row)
 
         # Live TOTP code display
@@ -563,20 +562,14 @@ class SSHKeyDialog(_BaseItemDialog):
         self._name_row = _entry_row("Name", k.name if k else "")
         details_group.add(self._name_row)
 
-        self._key_type_row = _entry_row(
-            "Key Type", k.key_type if k else "ed25519"
-        )
+        self._key_type_row = _entry_row("Key Type", k.key_type if k else "ed25519")
         details_group.add(self._key_type_row)
 
-        self._fingerprint_row = _entry_row(
-            "Fingerprint", k.fingerprint if k else ""
-        )
+        self._fingerprint_row = _entry_row("Fingerprint", k.fingerprint if k else "")
         self._add_copy_suffix(self._fingerprint_row)
         details_group.add(self._fingerprint_row)
 
-        self._passphrase_row = _password_row(
-            "Passphrase", k.passphrase if k else ""
-        )
+        self._passphrase_row = _password_row("Passphrase", k.passphrase if k else "")
         self._add_copy_suffix(self._passphrase_row)
         details_group.add(self._passphrase_row)
 
@@ -663,9 +656,7 @@ _DIALOG_MAP: dict[Category, type[_BaseItemDialog]] = {
 }
 
 
-def make_dialog(
-    category: Category, item: BaseItem | None = None
-) -> _BaseItemDialog:
+def make_dialog(category: Category, item: BaseItem | None = None) -> _BaseItemDialog:
     """Return the correct dialog instance for the given category."""
     cls = _DIALOG_MAP[category]
     return cls(item=item)  # type: ignore[arg-type]
