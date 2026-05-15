@@ -17,3 +17,12 @@ Just run the app from your launcher or run directly from command line:
 ```bash
 tlck
 ```
+
+## Screenshots
+
+<img width="1010" height="690" alt="Unlock vault" src="https://github.com/user-attachments/assets/4f7ce45b-7109-4678-8984-6c869ad4d842" />
+<img width="1010" height="690" alt="See logins" src="https://github.com/user-attachments/assets/0a9ba9f2-ff66-4490-bc49-6c2fa182ee16" />
+<img width="1010" height="690" alt="Edit login" src="https://github.com/user-attachments/assets/d8ad5d22-8fbb-41f4-9628-773323a80891" />
+<img width="1010" height="690" alt="Edit credit card" src="https://github.com/user-attachments/assets/6d1be016-c062-401e-9c03-5e0e3e30df17" />
+<img width="1010" height="690" alt="SSH keys" src="https://github.com/user-attachments/assets/ffdce8fa-ad7e-4c63-ba29-72f785635694" />
+<img width="1010" height="690" alt="Edit note" src="https://github.com/user-attachments/assets/195b4343-c410-4325-8074-21e17abe52ff" />
