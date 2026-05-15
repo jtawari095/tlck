@@ -26,7 +26,7 @@ tlck
 
 ## Screenshots
 
-<img width="1010" height="690" alt="Unlock vault" src="https://github.com/user-attachments/assets/4f7ce45b-7109-4678-8984-6c869ad4d842" />
+<img width="1010" height="690" alt="Unlock vault" src="https://github.com/user-attachments/assets/6958e6df-fb49-4549-9922-39faa6d237a0" />
 <img width="1010" height="690" alt="See logins" src="https://github.com/user-attachments/assets/0a9ba9f2-ff66-4490-bc49-6c2fa182ee16" />
 <img width="1010" height="690" alt="Edit login" src="https://github.com/user-attachments/assets/d8ad5d22-8fbb-41f4-9628-773323a80891" />
 <img width="1010" height="690" alt="Edit credit card" src="https://github.com/user-attachments/assets/6d1be016-c062-401e-9c03-5e0e3e30df17" />
