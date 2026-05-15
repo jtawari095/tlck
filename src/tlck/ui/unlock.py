@@ -46,8 +46,8 @@ class UnlockDialog(Adw.Dialog):
         clamp.set_maximum_size(360)
         clamp.set_margin_top(24)
         clamp.set_margin_bottom(24)
-        clamp.set_margin_start(12)
-        clamp.set_margin_end(12)
+        clamp.set_margin_start(24)
+        clamp.set_margin_end(24)
 
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=24)
 
