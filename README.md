@@ -10,6 +10,12 @@ It allows you to store, view, edit and delete your secrets locally.
 - ✍️ Supports creating login, credit cards, addresses, ssh keys and notes.
 - 🔒 Secure secrets with a master password required to be enter to view the secrets.
 
+## Requirements 💻
+
+To run `tlck` you must have `gtk4` and `libadwaita` system dependencies installed.
+
+If you are on NixOS, you can use the flakes based devshell derivation with `nix develop`.
+
 ## Usage 💻
 
 Just run the app from your launcher or run directly from command line:
