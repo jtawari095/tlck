@@ -629,7 +629,7 @@ class SecureNoteDialog(_BaseItemDialog):
 
         content_group = Adw.PreferencesGroup(title="Content")
         content_row, self._content_tv = _make_text_row(
-            "", n.content if n else "", height=200
+            "Content", n.content if n else "", height=200
         )
         content_group.add(content_row)
         container.append(content_group)
